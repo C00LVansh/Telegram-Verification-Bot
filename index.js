@@ -4,8 +4,12 @@ const {
   Telegraf,
   Markup
 } = require('telegraf');
+//change this 
 var token = 'token' 
 var mongo = 'mongodb'
+var url = 'urlhere'
+var apikey = 'ipqualityscore apikey'
+//to here
 const ms = require("ms");
 const axios = require('axios')
 const bot = new Telegraf(token);
@@ -31,8 +35,6 @@ db.on("ready", () => {
 db.connect();
 var chatt;
 var chatid;
-var url = 'urlhere'
-var apikey = 'ipqualityscore apikey'
 var username = 'bot username'
 bot.on('new_chat_members', async (ctx) => {
   const time = ms('30s')
