@@ -4,11 +4,15 @@ const {
   Telegraf,
   Markup
 } = require('telegraf');
+const {
+  Database
+} = require("quickmongo");
 //change this 
 var token = 'token' 
 var mongo = 'mongodb'
 var url = 'urlhere'
 var apikey = 'ipqualityscore apikey'
+const db = new Database(mongo);
 //to here
 const ms = require("ms");
 const axios = require('axios')
