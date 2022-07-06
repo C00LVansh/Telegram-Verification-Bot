@@ -29,10 +29,6 @@ app.use('/login/assets', express.static('assets'));
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs');
 const fs = require('fs');
-const {
-  Database
-} = require("quickmongo");
-const db = new Database(mongo);
 db.on("ready", () => {
   console.log("Connected to the database");
 });
